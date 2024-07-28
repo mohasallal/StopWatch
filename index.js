@@ -25,13 +25,11 @@ stop.addEventListener("click", () => {
 });
 
 reset.addEventListener("click", () => {
-  if (isRunning) {
-    clearInterval(timer);
-    elapsedTime = 0;
-    startTime = 0;
-    isRunning = false;
-    display.textContent = "00:00:00:00";
-  }
+  clearInterval(timer);
+  elapsedTime = 0;
+  startTime = 0;
+  isRunning = false;
+  display.textContent = "00:00:00:00";
 });
 
 function update() {
